@@ -1,0 +1,11 @@
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.release
+                groupId = "com.github.Namkuzu.ur"
+                artifactId = "ur"
+            }
+        }
+    }
+}
