@@ -6,7 +6,7 @@ Ur Compose is a lightweight and easy-to-use UI component library for Android, bu
 build.gradle (app)
 ```groovy
 dependecies {
-    //PENDING
+    implementation("com.github.Namkuzu:ur:v0.0.1-alpha")
 }
 ```
 
