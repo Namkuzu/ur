@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Ur Compose</string>
     <string name="show_dialog">Show dialog message</string>
     <string name="cancel">Cancel</string>
@@ -9,8 +9,11 @@
     <string name="t_new">New</string>
     <string name="hello">Hello</string>
     <string name="welcome">Welcome</string>
-    <string name="buttons">Buttons</string>
     <string name="dialogs">Dialogs</string>
     <string name="spinner">Spinner</string>
     <string name="support_image_document_dialog">Support image document dialog</string>
+    <string name="buttons">Buttons</string>
+    <string name="camera">Camera</string>
+    <string name="request">Request</string>
+    <string name="paint">Paint</string>
 </resources>

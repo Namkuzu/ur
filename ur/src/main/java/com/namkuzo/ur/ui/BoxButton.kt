@@ -13,8 +13,33 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.painter.Painter
+import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.graphics.vector.rememberVectorPainter
+import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
+import com.namkuzo.ur.R
 
+@Composable
+fun BoxButton(
+    modifier: Modifier = Modifier,
+    icon: ImageVector,
+    iconDescription: String,
+    text: String,
+    placeholder: String = "",
+    isCompleted: Boolean = false,
+    onClick: () -> Unit,
+){
+    BoxButton(
+        modifier = modifier,
+        icon = rememberVectorPainter(icon),
+        iconDescription = iconDescription,
+        text = text,
+        placeholder = placeholder,
+        isCompleted = isCompleted,
+        onClick = onClick
+    )
+}
 @Composable
 fun BoxButton(
     modifier: Modifier = Modifier,
