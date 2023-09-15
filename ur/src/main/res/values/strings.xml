@@ -2,4 +2,5 @@
     <string name="arrow_right">Arrow right</string>
     <string name="add">add</string>
     <string name="expandable">expandable</string>
+    <string name="delete_icon">delete icon</string>
 </resources>
