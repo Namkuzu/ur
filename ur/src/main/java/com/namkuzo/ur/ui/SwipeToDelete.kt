@@ -38,7 +38,7 @@ fun <T> SwipeToDelete(
     backgroundColor: Color = Color.Red,
     deleteIcon: ImageVector = Icons.Default.Delete,
     deleteIconColor: Color = Color.White,
-    content: @Composable (T) -> Unit
+    content: @Composable () -> Unit
 
 ) {
     LazyColumn(modifier = modifier.fillMaxSize()) {
@@ -85,7 +85,7 @@ fun <T> SwipeToDelete(
                     }
                 },
                 dismissContent = {
-                    content
+                    content()
                 }
             )
         }
