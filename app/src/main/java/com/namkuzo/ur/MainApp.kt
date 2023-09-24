@@ -10,6 +10,7 @@ import androidx.navigation.compose.rememberNavController
 import com.namkuzo.ur.screen.ButtonScreen
 import com.namkuzo.ur.screen.DialogsScreen
 import com.namkuzo.ur.screen.MenuScreen
+import com.namkuzo.ur.screen.MiscScreen
 import com.namkuzo.ur.screen.SpinnerScreen
 
 @Composable
@@ -23,8 +24,8 @@ fun MainApp(){
         ){
             composable(menuScreen){
                 MenuScreen(
-                    onPageSelected = {
-                        navController.navigate(it)
+                    onPageSelected = { page ->
+                        navController.navigate(page)
                     }
                 )
             }
@@ -43,11 +44,17 @@ fun MainApp(){
                     onBack = { navController.popBackStack() }
                 )
             }
+            composable(miscScreen){
+                MiscScreen(
+                    onBack = { navController.popBackStack() }
+                )
+            }
         }
     }
 }
 
-val buttonsScreen = "Buttons"
-val dialogsScreen = "Dialogs"
-val spinnerScreen = "Spinner"
-val menuScreen = "Menu"
+const val buttonsScreen = "Buttons"
+const val dialogsScreen = "Dialogs"
+const val spinnerScreen = "Spinner"
+const val miscScreen = "Misc"
+const val menuScreen = "Menu"

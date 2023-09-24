@@ -16,4 +16,6 @@
     <string name="camera">Camera</string>
     <string name="request">Request</string>
     <string name="paint">Paint</string>
+    <string name="widgets">Demo Widgets examples</string>
+    <string name="misc">Misc</string>
 </resources>

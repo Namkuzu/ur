@@ -35,6 +35,25 @@ fun TemplateScreen(
     modifier: Modifier = Modifier,
     horizontalAlignment: Alignment.Horizontal = Alignment.CenterHorizontally,
     textHeader: String = "",
+    isScrollable: Boolean = true,
+    onBackPressed: () -> Unit = {},
+    content: @Composable () -> Unit
+) {
+    TemplateScreen(
+        modifier = if (isScrollable) modifier.scrollable() else modifier,
+        horizontalAlignment = horizontalAlignment,
+        textHeader = textHeader,
+        onBackPressed = onBackPressed,
+        content = content
+    )
+}
+
+
+@Composable
+fun TemplateScreen(
+    modifier: Modifier = Modifier,
+    horizontalAlignment: Alignment.Horizontal = Alignment.CenterHorizontally,
+    textHeader: String = "",
     onBackPressed: () -> Unit = {},
     content: @Composable () -> Unit
 ) {
@@ -58,15 +77,17 @@ fun TemplateScreen(
             )
         }
         Column(
-            modifier = Modifier
-                .fillMaxSize()
-                .verticalScroll(rememberScrollState()),
+            modifier = Modifier.fillMaxSize(),
             horizontalAlignment = horizontalAlignment
         ) {
             content()
         }
     }
 }
+
+@Composable
+private fun Modifier.scrollable() = this
+    .verticalScroll(rememberScrollState())
 
 @Composable
 private fun TopBar(
