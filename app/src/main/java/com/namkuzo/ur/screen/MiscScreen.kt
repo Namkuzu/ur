@@ -39,6 +39,7 @@ fun MiscScreen(
         LazyColumn(){
             items(items = listOf("Test A", "Test B", "Test C")){ value ->
                 SwipeToDelete(
+                    modifier = Modifier.padding(8.dp),
                     content = {
                         OutlineBox() {
                             Text(
@@ -52,6 +53,7 @@ fun MiscScreen(
         }
 
         SwipeToDelete(
+            modifier = Modifier.padding(8.dp),
             content = {
                 OutlineBox() {
                     Text(

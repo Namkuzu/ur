@@ -30,44 +30,44 @@ fun MenuScreen(
             textAlign = TextAlign.Center
         )
         SignBoard(
-            modifier = Modifier.padding(top = 8.dp),
+            modifier = Modifier.padding(top = 16.dp, start = 16.dp, end = 16.dp),
             title = stringResource(id = R.string.buttons).uppercase()
         )
         ActionButton(
-            modifier = Modifier.padding(16.dp),
+            modifier = Modifier.padding(32.dp),
             text = stringResource(id = R.string.buttons),
             cornerShapeSize = 28.dp
         ) {
             onPageSelected(buttonsScreen)
         }
         SignBoard(
-            modifier = Modifier.padding(top = 16.dp),
+            modifier = Modifier.padding(top = 16.dp, start = 16.dp, end = 16.dp),
             title = stringResource(id = R.string.dialogs).uppercase(),
         )
         ActionButton(
-            modifier = Modifier.padding(16.dp),
+            modifier = Modifier.padding(32.dp),
             text = stringResource(id = R.string.dialogs),
             cornerShapeSize = 28.dp
         ) {
             onPageSelected(dialogsScreen)
         }
         SignBoard(
-            modifier = Modifier.padding(top = 16.dp),
+            modifier = Modifier.padding(top = 16.dp, start = 16.dp, end = 16.dp),
             title = stringResource(id = R.string.spinner).uppercase(),
         )
         ActionButton(
-            modifier = Modifier.padding(16.dp),
+            modifier = Modifier.padding(32.dp),
             text = stringResource(id = R.string.spinner),
             cornerShapeSize = 28.dp
         ) {
             onPageSelected(spinnerScreen)
         }
         SignBoard(
-            modifier = Modifier.padding(top = 16.dp),
+            modifier = Modifier.padding(top = 16.dp, start = 16.dp, end = 16.dp),
             title = stringResource(id = R.string.misc).uppercase(),
         )
         ActionButton(
-            modifier = Modifier.padding(16.dp),
+            modifier = Modifier.padding(32.dp),
             text = stringResource(id = R.string.misc),
             cornerShapeSize = 28.dp
         ) {
